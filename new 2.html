@@ -2,19 +2,39 @@
 <html>
 <head>
 <title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script>
+function getCoordinates() {
+navigator.geolocation.getCurrentPosition(showCoordinates,showError);
+}
+
+function showCoordinates(position) {
+document.write("Широта: " + position.coords.latitude + "<br />");
+document.write("Долгота: " + position.coords.longitude); 
+}
+
+function showError(error) {
+   switch(error.code) {
+      case error.PERMISSION_DENIED:
+	alert("Пользователь запретил считывать информацию о его местоположении.");
+	break;
+      case error.POSITION_UNAVAILABLE:
+	alert("Браузер не смог определить местоположение пользователя.");
+	break;
+      case error.TIMEOUT:
+	alert("Браузер не успел определить местоположение за выделенное ему время.");
+	break;
+      case error.UNKNOWN_ERROR:
+	alert("Произошла неопределенная ошибка.");
+	break;
+   }
+}
+</script>
 </head>
 <body>
-<p align=center>
-<script>
-var dr=new Date(2017,2,10);
-dn=dr.getDay()
-if (dn==0) alert("вс")
-if (dn==1) alert("пн")
-if (dn==2) alert("вт")
-if (dn==3) alert("ср")
-if (dn==4) alert("чт")
-if (dn==5) alert("пт")
-if (dn==6) alert("сб")
-</script>
+<p>Нажмите на кнопку, чтобы считать координаты своего местоположения:</p>
+<input type="button" value="Считать координаты" onclick="getCoordinates()">
+
 </body>
-</html> 
+</html>
