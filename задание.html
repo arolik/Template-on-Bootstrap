@@ -1,0 +1,26 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<title></title>
+
+</head>
+<body>
+<script>
+function Human(name,age,job){
+this.name=name;
+this.age=age;
+this.job=job;
+this.who=function who(){
+document.write('я<b> '+this.name+'</b> мне <b>'+this.age+'</b> лет');
+document.write(' я работаю <b>'+this.job+'ом</b>.<br/>');
+}
+}
+human1=new Human('дмитрий',26,'дизайнер');
+human1.who();
+human2=new Human('станислав',32,'програмист');
+human2.who();
+human3=new Human('сергей',32,'менеджер');
+human3.who();
+</script>
+</body>
+</html>
