@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1 style="text-align:center">Анкета пользователя</h1><br>
+<h2 id="fio" style="margin-left:40px">Ф.И.О.:</h2>
+<h2 id="age" style="margin-left:40px">Возраст:</h2>
+<h2 id="email" style="margin-left:40px">e-mail:</h2>
+<input type="button" value="go" onclick="vvod();">
+<script>
+/*function vvod(){
+var d=prompt("vvedite FIO","");
+fio.innerHTML=fio.innerHTML+"<font color='Pink'>"+d+"</font>";
+
+d=prompt("vvedite vozrast","");
+age.innerHTML=age.innerHTML+"<font color='Blue'>"+d+"</font>";
+
+d=prompt("vvedite email","");
+email.innerHTML=email.innerHTML+"<font color='Red'><em>"+d+"<em></font>"
+}*/
+function vvod(){
+var d=prompt("ВВедите ФИО","");
+fio.innerHTML=fio.innerHTML+d; 
+d=prompt("введите возраст","");
+age.innerHTML=age.innerHTML+d;
+d=prompt("ddtlbnt email","");
+email.innerHTML=email.innerHTML+d;
+}
+fio.style.backgroundColor="LightBlue";
+fio.style.fontFamily="sans-serif";
+age.style.backgroundColor="Aquamarine";
+email.style.backgroundColor="LightBlue";
+email.style.fontFamily="sans-serif";
+
+</script>
+
+</body>
+</html> 
