@@ -1,0 +1,36 @@
+ <!DOCTYPE  html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h3>выберите 3 варрианта</h3>
+<form name="form1">
+<input type="checkbox" name="ch_1" onclick="checkAll()">вариант 1<br/>
+<input type="checkbox" name="ch_2" onclick="checkAll()">вариант 2<br/>
+<input type="checkbox" name="ch_3" onclick="checkAll()">вариант 3<br/>
+<input type="checkbox" name="ch_4" onclick="checkAll()">вариант 4<br/>
+<input type="checkbox" name="ch_5" onclick="checkAll()">вариант 5<br/>
+</form>
+<script>
+var numChecked, maxChecked=3;
+function checkAll(){
+numChecked=0;
+for(i=0; i<form1.length; i++){
+if(form1.elements[i].type=="checkbox" && form1.elements[i].checked)
+numChecked++;
+}
+if(numChecked==maxChecked){
+for(i=0; i<form1.length; i++)
+if(form1.elements[i].type=="checkbox" && !form1.elements[i].checked)
+form1.elements[i].disabled=true;
+}
+else{
+for(i=0; i<form1.length; i++)
+if(form1.elements[i].type=="checkbox")
+form1.elements[i].disabled=false;
+}
+}
+</script>
+</body>
+</html>
