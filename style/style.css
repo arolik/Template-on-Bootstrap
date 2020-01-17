@@ -2,13 +2,115 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width:760px) {
-    img {
-        width:50%;
-        height:auto;
+/*  шапка */
+
+header {
+    background:url("../img/BG.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:775px;
+    
+}
+
+a {
+   
+    text-transform:uppercase;
+}
+
+.navbar-brand img {
+    width:230px;
+    height:auto;
+}
+
+.timer {
+    border:3px solid #90d23d;
+    height:195px;
+    border-radius:15px;
+    position:absolute;
+    top:200px;
+    color:#fff;
+    font-weight:normal;
+}
+
+.timerSize {
+    font-size:90px;
+}
+ .timerNumber {
+     font-size:25px;
+     margin:0;
+ }
+
+ @media (max-width:576px) {
+    .btnHidden {
+        margin-bottom:20px;
+    }
+}
+
+@media (min-width:320px) {
+    .btnHidden {
+        margin-bottom:40px;
+    }
+}
+
+@media (max-width:1140px) {
+    .timer {
+        height:155px;
+    }
+    .timerSize {
+        font-size:60px;
     }
 
+}
 
+@media (max-width:970px) {
+    .timer {
+        height:125px;
+    }
+    .timerSize {
+        font-size:40px;
+    }
+    .timerNumber {
+        font-size:20px;
+    }
+}
+
+@media (max-width:870px) {
+    .timer {
+        height:65px;
+    }
+    .timerSize {
+        font-size:15px;
+    }
+    .timerNumber {
+        font-size:15px;
+    }
+}
+
+@media (min-width:320px) {
+    .timer {
+        top:350px;
+        height:65px;
+    }
+    .timerSize {
+        font-size:12px;
+    }
+    .timerNumber {
+        font-size:10px;
+    }
+}
+/* главный блок  */
+
+.mainBlock {
+    
 
 }
+
+
+
+
+
+
+
+
 
