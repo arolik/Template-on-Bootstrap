@@ -1,6 +1,7 @@
 
 
 body {
+    
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -11,7 +12,7 @@ header {
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
-    height:775px;
+    height:1000px;
     
 }
 
@@ -140,6 +141,14 @@ input  {
     border:none;
 }
 
+.btnForm:hover {
+    background:#7FFF00;
+}
+
+.btnForm:active, .btnForm:focus {
+    outline:none;
+}
+
 @media (max-width:1140px) {
     .mainForm {
         top:100%;
@@ -187,6 +196,162 @@ input  {
         height:70px;
     }
 }
+
+/*  We are */
+
+.we {
+    background:url("../img/background.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:780px;
+
+}
+
+@media (min-width:320px){
+    .we {
+        height:auto;
+    }
+}
+
+@media (min-width:1200px){
+    .we {
+        height:780px;
+    }
+}
+
+.elite {
+    position:absolute;
+    left:170px;
+}
+
+.weAreText {
+    padding-top:200px;
+}
+
+
+@media (max-width:1200px) {
+    .elite {
+        left:20%;
+    }
+
+    .elite img {
+        max-width:70%;
+    }
+
+    .weAreText {
+        padding-top:150px;
+    }
+}
+
+@media (max-width:960px) {
+    .elite {
+        left:10%;
+    }
+
+    .elite img {
+        max-width:70%;
+    }
+
+    .weAreText {
+        padding-top:150px;
+    }
+}
+
+@media (max-width:540px) {
+    .elite {
+        left:10%;
+    }
+
+    .elite img {
+        max-width:50%;
+    }
+
+    .weAreText {
+        padding-top:200px;
+    }
+}
+
+@media (max-width:320px) {
+    .elite {
+        left:50%;
+        margin-left:-35px;
+    }
+
+    .elite img {
+        max-width:50%;
+    }
+
+    .weAreText {
+        padding-top:150px;
+    }
+}
+
+
+
+.weAreBtn {
+    background:#90d23d;
+    color:#fff;
+    height:60px;
+    font-size:20px;
+    border-radius:10px;
+    border:none;
+    
+}
+
+ .weAreBtn:active, .weAreBtn:focus {
+    outline:none;
+}
+
+.weAreBtn:hover {
+    background:#7FFF00;
+}
+
+/*  speakers  */
+/*
+.speakerContent div:nth-child(2) {
+  
+    max-width:296px;
+    max-height:296px;
+    background:url("../img/greenBg.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+*/
+.blockWrapper {
+    position:relative;
+}
+
+.inside {
+    position:absolute;
+    top:5%;
+    left:5%;
+}
+
+.speakerContent div:nth-child(2) h4 {
+    font-size:50px;
+}
+
+.speakerContent div:nth-child(2) p {
+    font-size:20px;
+}
+
+.speakerContent div:nth-child(2) h4:after {
+   content:"";
+   display:block;
+   width:100px;
+   height:6px;
+   background:#fff;
+}
+
+@media (max-width:440px){
+    .blocks img {
+        max-width:90%;
+    }
+
+}
+
 
 
 
