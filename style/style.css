@@ -1,5 +1,7 @@
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 /*  шапка */
@@ -41,20 +43,17 @@ a {
      margin:0;
  }
 
- @media (max-width:576px) {
+
+
+@media (min-width:320px) {
     .btnHidden {
         margin-bottom:20px;
     }
 }
 
-@media (min-width:320px) {
-    .btnHidden {
-        margin-bottom:40px;
-    }
-}
-
 @media (max-width:1140px) {
     .timer {
+        top:250px;
         height:155px;
     }
     .timerSize {
@@ -63,8 +62,9 @@ a {
 
 }
 
-@media (max-width:970px) {
+@media (max-width:995px) {
     .timer {
+        top:300px;
         height:125px;
     }
     .timerSize {
@@ -87,9 +87,11 @@ a {
     }
 }
 
-@media (min-width:320px) {
+
+
+@media (max-width:576px) {
     .timer {
-        top:350px;
+        top:400px;
         height:65px;
     }
     .timerSize {
@@ -99,12 +101,66 @@ a {
         font-size:10px;
     }
 }
+
+
 /* главный блок  */
 
-.mainBlock {
-    
+
+
+.welcome {
+    position:relative;
+}
+
+.mainForm {
+    border:1px solid silver;
+    position:absolute;
+    top:-250px;
+    box-shadow:  0px 2px 0px 0px #949293;
+}
+
+ h3 {
+    font-weight:900;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+input  {
+    border:1px solid silver;
+}
+
+.btnForm {
+    background:#90d23d;
+    color:#fff;
+    height:60px;
+    font-size:40px;
+    border-radius:10px;
+    border:none;
+}
+
+@media (max-width:1140px) {
+    .mainForm {
+        top:100%;
+
+    }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
