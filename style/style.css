@@ -15,6 +15,8 @@ header {
     
 }
 
+
+
 a {
    
     text-transform:uppercase;
@@ -109,6 +111,7 @@ a {
 
 .welcome {
     position:relative;
+    
 }
 
 .mainForm {
@@ -142,14 +145,30 @@ input  {
         top:100%;
 
     }
-
-
 }
 
 
 
 
 
+.planP {
+    height:70px;
+}
+
+.planP:nth-child(1) {
+    background:#a3cc40;
+    font-size:35px;
+}
+
+.planP:nth-child(2n) {
+   background:#373737;
+    font-size:25px;
+}
+
+.planP:nth-child(odd):not(:nth-child(1)) {
+    background:#4b4d4f;
+    font-size:25px;
+ }
 
 
 
