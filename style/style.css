@@ -149,7 +149,7 @@ input  {
 
 
 
-
+/* plan */
 
 .planP {
     height:70px;
@@ -157,24 +157,36 @@ input  {
 
 .planP:nth-child(1) {
     background:#a3cc40;
-    font-size:35px;
+    font-size:30px;
 }
 
 .planP:nth-child(2n) {
    background:#373737;
-    font-size:25px;
+    font-size:20px;
 }
 
 .planP:nth-child(odd):not(:nth-child(1)) {
     background:#4b4d4f;
-    font-size:25px;
+    font-size:20px;
  }
 
+@media (min-width:320px){
+    .planP {
+        height:150px;
+    }
+}
 
+@media (min-width:768px){
+    .planP {
+        height:100px;
+    }
+}
 
-
-
-
+@media (min-width:960px){
+    .planP {
+        height:70px;
+    }
+}
 
 
 
