@@ -413,3 +413,83 @@ input  {
     }
 }
 
+/* past events */
+
+
+.pastText h4 {
+    font-weight:bold;
+    font-size:40px;
+}
+
+.bluePhoto {
+    background:url("../img/blue.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:416px;
+    
+}
+
+.greenPhoto {
+    background:url("../img/green.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:416px;
+}
+
+.orangePhoto {
+    background:url("../img/orange.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:366px;
+}
+
+.redPhoto {
+    background:url("../img/red.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:366px;
+}
+
+.eventBtn {
+    background:#373737;
+    color:#fff;
+    width:200px;
+    height:50px;
+    border-radius:10px;
+    font-size:20px;
+    border:none;
+}
+
+.eventBtn:hover {
+    background:#7FFF00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
