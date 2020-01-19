@@ -468,23 +468,70 @@ input  {
     background:#7FFF00;
 }
 
+/* footer */
 
+.footerMap {
+    background:url("../img/Map.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height:660px;
 
+}
 
+.btnForm {
+    background:#90d23d;
+    color:#fff;
+    width:200px;
+    height:50px;
+    border-radius:10px;
+    font-size:20px;
+    border:none;
+}
 
+.btnFormSend {
+    background:#373737;
+    color:#fff;
+    height:50px;
+    border-radius:10px;
+    font-size:20px;
+    border:none;
+}
 
+.btnFormSend:hover {
+    background:#7FFF00;
+}
 
+@media (min-width:320px) {
+    .footerMap {
+        height:auto;
+    }
+}
 
+@media (min-width:1140px) {
+    .footerMap {
+        height:660px;
+        padding:50px;
+    }
+}
 
+.contact {
+    height:215px;
+    background:#90d23d;
+}
 
+@media (min-width:320px) {
+    .contact {
+        height:auto;
+    }
 
+}
 
-
-
-
-
-
-
+@media (min-width:1140px) {
+    .contact {
+        height:215px;
+    }
+}
 
 
 
